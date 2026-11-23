@@ -1,0 +1,206 @@
+{
+  "salary_pearson_r": 0.9782416184887599,
+  "salary": {
+    "intercept": 25321.583011776813,
+    "coef": 9423.815323030976,
+    "n_train": 24,
+    "n_test": 6,
+    "train": {
+      "MSE": 27102249.73126139,
+      "RMSE": 5205.982110155719,
+      "MAE": 4221.046734449738,
+      "R2": 0.9645401573418146
+    },
+    "test": {
+      "MSE": 49830096.85590839,
+      "RMSE": 7059.04362190151,
+      "MAE": 6286.453830757749,
+      "R2": 0.9024461774180497
+    },
+    "mean_salary": 76003.0,
+    "std_salary": 27414.4297845823
+  },
+  "selection": {
+    "table": [
+      {
+        "feature": "smoker",
+        "|corr| (Pearson)": 0.78723,
+        "Score F": 2175.73686,
+        "Info. mutuelle": 0.36928,
+        "Importance RF": 0.61939,
+        "Rang moyen": 1.25
+      },
+      {
+        "feature": "age",
+        "|corr| (Pearson)": 0.29831,
+        "Score F": 130.40297,
+        "Info. mutuelle": 1.49786,
+        "Importance RF": 0.12899,
+        "Rang moyen": 2.0
+      },
+      {
+        "feature": "bmi",
+        "|corr| (Pearson)": 0.1984,
+        "Score F": 54.70271,
+        "Info. mutuelle": 0.07386,
+        "Importance RF": 0.21146,
+        "Rang moyen": 3.25
+      },
+      {
+        "feature": "children",
+        "|corr| (Pearson)": 0.06739,
+        "Score F": 6.09033,
+        "Info. mutuelle": 0.16078,
+        "Importance RF": 0.01898,
+        "Rang moyen": 4.5
+      },
+      {
+        "feature": "sex",
+        "|corr| (Pearson)": 0.05804,
+        "Score F": 4.51304,
+        "Info. mutuelle": 0.17628,
+        "Importance RF": 0.00579,
+        "Rang moyen": 5.25
+      },
+      {
+        "feature": "region_southeast",
+        "|corr| (Pearson)": 0.07358,
+        "Score F": 7.26664,
+        "Info. mutuelle": 0.035,
+        "Importance RF": 0.00531,
+        "Rang moyen": 5.5
+      },
+      {
+        "feature": "region_northwest",
+        "|corr| (Pearson)": 0.03869,
+        "Score F": 2.00186,
+        "Info. mutuelle": 0.05679,
+        "Importance RF": 0.006,
+        "Rang moyen": 6.75
+      },
+      {
+        "feature": "region_southwest",
+        "|corr| (Pearson)": 0.04364,
+        "Score F": 2.54698,
+        "Info. mutuelle": 0.00247,
+        "Importance RF": 0.00408,
+        "Rang moyen": 7.5
+      }
+    ],
+    "top3": [
+      "smoker",
+      "age",
+      "bmi"
+    ]
+  },
+  "insurance": {
+    "intercept": 13030.203369289053,
+    "coefs": {
+      "smoker": 9232.94,
+      "age": 3524.26,
+      "bmi": 1843.75
+    },
+    "n_train": 1069,
+    "n_test": 268,
+    "train": {
+      "MSE": 37485488.55538669,
+      "RMSE": 6122.539387818317,
+      "MAE": 4227.82742167947,
+      "R2": 0.7262127679776246
+    },
+    "test": {
+      "MSE": 35841574.81814749,
+      "RMSE": 5986.7833448478395,
+      "MAE": 4191.70429460389,
+      "R2": 0.8049502474643173
+    },
+    "all_features_test": {
+      "MSE": 35478020.67523558,
+      "RMSE": 5956.342894363585,
+      "MAE": 4177.045561036324,
+      "R2": 0.8069287081198013
+    },
+    "baseline_test": {
+      "MSE": 185298141.68739662,
+      "RMSE": 13612.426003009037,
+      "MAE": 9861.797880026175,
+      "R2": -0.008391982350864469
+    },
+    "mean_charges": 13279.121486655948,
+    "std_charges": 12110.359656344175
+  },
+  "gdp": {
+    "linear": {
+      "train": {
+        "MSE": 2.9276664747686003,
+        "RMSE": 1.7110425110933394,
+        "MAE": 1.284462914319615,
+        "R2": 0.5130560991038982
+      },
+      "test": {
+        "MSE": 2.909722992049545,
+        "RMSE": 1.7057910165226997,
+        "MAE": 1.3414461449917825,
+        "R2": 0.5577998402159325
+      }
+    },
+    "poly": {
+      "train": {
+        "MSE": 0.026367143731588338,
+        "RMSE": 0.1623796284377703,
+        "MAE": 0.1024781572880855,
+        "R2": 0.9956144868499194
+      },
+      "test": {
+        "MSE": 0.021411287683197715,
+        "RMSE": 0.14632596380409635,
+        "MAE": 0.08179902648962421,
+        "R2": 0.9967460562876387
+      }
+    },
+    "degree": 5,
+    "cv_min_degree": 7,
+    "n_train": 44,
+    "n_test": 11,
+    "cv": [
+      {
+        "degré": 1,
+        "RMSE CV (moy.)": 1.74928,
+        "RMSE CV (écart-type)": 0.52528
+      },
+      {
+        "degré": 2,
+        "RMSE CV (moy.)": 1.07957,
+        "RMSE CV (écart-type)": 0.31271
+      },
+      {
+        "degré": 3,
+        "RMSE CV (moy.)": 0.53757,
+        "RMSE CV (écart-type)": 0.10118
+      },
+      {
+        "degré": 4,
+        "RMSE CV (moy.)": 0.2512,
+        "RMSE CV (écart-type)": 0.06532
+      },
+      {
+        "degré": 5,
+        "RMSE CV (moy.)": 0.21569,
+        "RMSE CV (écart-type)": 0.10036
+      },
+      {
+        "degré": 6,
+        "RMSE CV (moy.)": 0.23224,
+        "RMSE CV (écart-type)": 0.09524
+      },
+      {
+        "degré": 7,
+        "RMSE CV (moy.)": 0.19981,
+        "RMSE CV (écart-type)": 0.05076
+      }
+    ],
+    "mean_gdp": 1.4370418159874956,
+    "extrap_2030_linear": 6.167992120072704,
+    "extrap_2030_poly": 72.75936739433993
+  }
+}
